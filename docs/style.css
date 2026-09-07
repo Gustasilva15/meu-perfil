@@ -1,5 +1,7 @@
-body {   
-    font-family: Arial, sans-serif;
+/* ==================== Base ==================== */
+
+body {
+    font-family: 'inter', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #292929;
@@ -10,11 +12,28 @@ a {
     text-decoration: none;
 }
 
+/* ==================== Cabeçalho ==================== */
+
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #313131;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 30px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 #menu {
@@ -22,5 +41,56 @@ header {
     list-style: none;
     gap: 30px;
     justify-content: center;
-    
+}
+
+#fotinhatopo {
+    display: flex;
+    justify-content: right;
+}
+
+/* ==================== Conteúdo ==================== */
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffffbd;
+    text-align: center;
+}
+
+p {
+    color: #ffffffbd;
+    text-align: center;
+}
+
+#habilidades-lista {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    color: #ffffffbd;
+}
+
+#ver-detalhes {
+    display: block;
+    width: fit-content;
+    margin: 10px auto 0;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #5c5c5c;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==================== Rodapé ==================== */
+
+footer {
+    background-color: #313131;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
 }
