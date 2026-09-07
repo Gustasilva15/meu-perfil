@@ -18,11 +18,9 @@ header {
 }
 
 #menu {
-    background-color: #313131;
-    padding: 10px;
-    text-align: center;
     display: flex;
     list-style: none;
     gap: 30px;
     justify-content: center;
+    
 }
